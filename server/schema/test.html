@@ -1,0 +1,31 @@
+<form onSubmit={handleSubmit}>
+    <div className="form-outline mb-4">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        className="form-control form-control-lg"
+        value={name}
+        onChange={handleInputChange}
+      />
+      <label className="form-label" htmlFor="name">Your Name</label>
+    </div>
+
+    <div className="form-outline mb-4">
+      <input
+        type="number"
+        id="age"
+        name="age"
+        className="form-control form-control-lg"
+        value={age}
+        onChange={handleInputChange}
+      />
+      <label className="form-label" htmlFor="age">Your Age</label>
+    </div>
+
+    <div className="d-flex justify-content-center">
+      <button type="submit" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
+        Register
+      </button>
+    </div>
+  </form>
